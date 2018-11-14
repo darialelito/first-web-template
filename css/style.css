@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+span {
+    font-weight: 300;
+    color: hotpink;
+}
+
+/*START header*/
+header {
+    position: relative;
+    height: 100vh;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: url(../img/mountains_1280x640.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*    background-position: 100% 100%;*/
+    color: white;
+
+}
+
+header > * {
+    position: absolute;
+}
+
+.header {
+    top: 18%;
+    left: 20px;
+}
+
+h2.welcome {
+    font-size: 28px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+h1.developer {
+    font-size: 33px;
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+    .header {
+        top: 15%;
+    }
+
+    h2.welcome {
+        font-size: 32px;
+    }
+
+    h1.developer {
+        font-size: 38px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+    h2.welcome {
+        font-size: 34px;
+    }
+
+    h1.developer {
+        font-size: 44px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    .header {
+        left: 40px;
+    }
+
+    h2.welcome {
+        font-size: 52px;
+        padding-bottom: 30px;
+    }
+
+    h1.developer {
+        font-size: 65px;
+    }
+}
+
+@media (orientation: landscape) {
+    .header {
+        top: 14%;
+    }
+}
+
+@media (orientation: landscape) and (min-width:1024px) {
+
+    .header {
+        top: 9%;
+        left: 40px;
+    }
+
+    h2.welcome {
+        font-size: 72px;
+        padding-bottom: 20px;
+    }
+
+    h1.developer {
+        font-size: 68px;
+    }
+}
+
+/*
+@media (orientation: landscape) and (min-width:1280px) {
+    .header {
+        top: 9%;
+    }
+}*/
+
+section.project {
+    height: 70vh;
+}
