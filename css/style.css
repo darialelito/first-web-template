@@ -125,7 +125,7 @@ h1.developer {
 h1.main-title {
     font-size: 30px;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    padding: -bottom: 15px;
 }
 
 h2.second-title {
@@ -140,6 +140,7 @@ section.skills {
     margin-top: 20px;
     padding: 5%;
     text-align: center;
+    /*    background-color: rgb(229, 189, 187);*/
 }
 
 section.skills img {
@@ -175,6 +176,90 @@ section.skills p.description {
 
 }
 
-section.project {
-    height: 70vh;
+/*START section.project*/
+.projects {
+    padding: 10px 0 30px;
+    background-color: rgb(255, 193, 193);
+    color: white;
+}
+
+.projects .projectdescription {
+    padding: 0 20px;
+}
+
+.projects h1.main-title {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.projects h2.second-title {
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    padding-top: 10px;
+    padding-left: 0;
+    border-bottom: 2px solid white;
+    text-indent: 20px;
+    font-size: 23px;
+}
+
+.projects .projectimg img {
+    width: 100%;
+}
+
+.projects .project {
+    background-color: rgba(161, 167, 201, 0.5);
+    max-width: 1400px;
+    margin: 0 auto 20px;
+}
+
+@media (orientation:landscape) and (min-width: 640px) {
+
+    .projectimg,
+    .projectdescription {
+        width: 50%;
+        float: left;
+    }
+
+    .projectimg {
+        display: block;
+    }
+
+    .projects .project:nth-of-type(even) .projectimg {
+        float: right;
+        /*        background-size: cover;*/
+    }
+
+    .projects .project:nth-of-type(even) .projectdescription {
+        padding-right: 0;
+    }
+
+    .projects .project:nth-of-type(even) .projectdescription p {
+        padding-right: 20px;
+    }
+
+    .projects .project:nth-of-type(even) .projectdescription h2 {
+        text-indent: 0;
+        margin-left: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    .projects h1 {
+        font-size: 40px;
+    }
+
+    .projects .projectdescription h2 {
+        font-size: 28px;
+        text-indent: 40px;
+    }
+
+    .projects .projectdescription p {
+        font-size: 18px;
+        padding-left: 40px;
+    }
+
+    .projects .project {
+        margin-bottom: 40px;
+    }
 }
