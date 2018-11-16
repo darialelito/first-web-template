@@ -291,3 +291,285 @@ section.skills p.description {
     }
 
 }
+
+/*START section.motto*/
+section.motto {
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(../img/volcanoes1920x1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    color: white;
+    background-attachment: fixed;
+}
+
+.motto .moto {
+    padding: 30px 10px;
+    background-color: rgba(0, 63, 114, 0.5);
+}
+
+.motto p {
+    font-size: 18px;
+}
+
+.motto p.author {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+@media (orientation: landscape) {
+    .motto p {
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width:768px) {
+    .motto h1 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .motto p {
+        font-size: 24px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .motto p.author {
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width:1024px) {
+    .motto .moto {
+        height: 70vh;
+    }
+
+    .motto h1 {
+        font-size: 60px;
+    }
+
+    .motto p {
+        font-size: 28px;
+    }
+}
+
+/*START section.hobby*/
+section.hobby {
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hobby h1.main-title {
+    padding: 20px 15px;
+}
+
+.hobby .item {
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hobby .item:nth-of-type(1) {
+    background-image: url(../img/hobby1640x480.jpg);
+}
+
+.hobby .item:nth-of-type(2) {
+    background-image: url(../img/snowboarder640x480.jpg);
+}
+
+.hobby .item:nth-of-type(3) {
+    background-image: url(../img/old-books640x480.jpg);
+}
+
+.hobby .item:nth-of-type(4) {
+    background-image: url(../img/camera640.jpg);
+}
+
+.hobby .item p {
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 640px) {
+    .hobby .item {
+        float: left;
+        width: 50%;
+    }
+
+    .hobby .item p {
+        line-height: 28px;
+    }
+}
+
+@media (min-width: 768px) {
+    .hobby .item p {
+        font-size: 30px;
+        padding: 15px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hobby .item {
+        height: 50vh;
+        background-size: 100%;
+        transition: 0.7s;
+    }
+
+    .hobby .item p {
+        padding: 0;
+        line-height: 50vh;
+        opacity: 0;
+        transition: 0.7s;
+    }
+
+    .hobby .item:hover p {
+        opacity: 1;
+    }
+
+    .hobby .item:hover {
+        background-size: 130%;
+    }
+}
+
+/*START section.contact*/
+.contact {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 10px 20px 30px;
+    background-color: #4c4c67;
+    color: white;
+}
+
+.contact h1 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.contact .wrapper {
+    padding-top: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.contact input {
+    height: 36px;
+    padding: 5px;
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+.contact button {
+    font-size: 14px;
+    line-height: 40px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: 0.4s;
+}
+
+.contact .social {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.contact .social p {
+    padding-left: 10px;
+    font-size: 21px;
+}
+
+.contact .socials .fab {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    color: white;
+}
+
+@media (min-width: 533px) {
+    .contact button {
+        font-size: 18px;
+    }
+
+    .contact .socials {
+        text-align: center;
+    }
+
+    .contact .social {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .contact form,
+    .contact .socials {
+        float: left;
+        width: 50%;
+        padding: 0 20px;
+    }
+
+    .contact .social {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    .contact .fab {
+        transition: all 0.4s;
+    }
+
+    .contact .fab:hover {
+        background-color: white;
+        color: #4c4c67;
+        transform: rotate(180deg);
+    }
+
+    .contact button:hover {
+        background-color: white;
+        color: #4c4c67;
+    }
+
+}
+
+/*START footer*/
+footer {
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: right;
+    background-color: #434362;
+    color: aliceblue;
+    padding: 15px;
+}
