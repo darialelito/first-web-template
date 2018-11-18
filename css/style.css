@@ -29,6 +29,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    /*    background-position: 100% 100%;*/
     color: white;
 
 }
@@ -43,9 +44,9 @@ header > * {
 }
 
 h2.welcome {
-    padding-bottom: 10px;
     font-size: 28px;
     text-transform: uppercase;
+    padding-bottom: 10px;
 }
 
 h1.developer {
@@ -82,8 +83,8 @@ h1.developer {
     }
 
     h2.welcome {
-        padding-bottom: 30px;
         font-size: 52px;
+        padding-bottom: 30px;
     }
 
     h1.developer {
@@ -105,8 +106,8 @@ h1.developer {
     }
 
     h2.welcome {
-        padding-bottom: 20px;
         font-size: 72px;
+        padding-bottom: 20px;
     }
 
     h1.developer {
@@ -114,10 +115,17 @@ h1.developer {
     }
 }
 
+/*
+@media (orientation: landscape) and (min-width:1280px) {
+    .header {
+        top: 9%;
+    }
+}*/
+
 h1.main-title {
-    padding-bottom: 15px;
     font-size: 30px;
     text-transform: uppercase;
+    padding-bottom: 15px;
 }
 
 h2.second-title {
@@ -127,16 +135,19 @@ h2.second-title {
 
 
 /*START section.skills*/
+
 section.skills {
-    max-width: 1600px;
-    margin: 20 auto 0;
+    margin-top: 20px;
     padding: 5%;
     text-align: center;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 section.skills img {
-    margin: 5px 0;
     width: 100%;
+    margin: 5px 0;
+    /*    max-width: 375px;*/
 }
 
 section.skills p.description {
@@ -168,11 +179,11 @@ section.skills p.description {
 
 /*START section.project*/
 .projects {
-    max-width: 1600px;
-    margin: 0 auto;
     padding: 10px 0 30px;
     background-color: rgb(255, 193, 193);
     color: white;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .projects h1.main-title {
@@ -181,9 +192,9 @@ section.skills p.description {
 }
 
 .projects .project {
+    background-color: rgba(161, 167, 201, 0.5);
     max-width: 1400px;
     margin: 0 auto 20px;
-    background-color: rgba(161, 167, 201, 0.5);
 }
 
 .projects .projectimg img {
@@ -191,8 +202,8 @@ section.skills p.description {
 }
 
 .projects .projectdescription {
-    padding: 10px 20px 20px 0px;
     text-align: left;
+    padding: 10px 20px 20px 0px;
 }
 
 .projects h2.second-title {
@@ -249,8 +260,8 @@ section.skills p.description {
     }
 
     .projects .projectdescription p {
-        padding-left: 40px;
         font-size: 18px;
+        padding-left: 40px;
     }
 
     .projects .project {
@@ -304,9 +315,9 @@ section.motto {
 }
 
 .motto p.author {
+    font-size: 12px;
     margin-top: 20px;
     margin-bottom: 50px;
-    font-size: 12px;
 }
 
 @media (orientation: landscape) {
@@ -324,10 +335,10 @@ section.motto {
     }
 
     .motto p {
+        font-size: 24px;
         width: 70%;
         margin-left: auto;
         margin-right: auto;
-        font-size: 24px;
     }
 
     .motto p.author {
@@ -404,8 +415,8 @@ section.hobby {
 
 @media (min-width: 768px) {
     .hobby .item p {
-        padding: 15px 0;
         font-size: 30px;
+        padding: 15px 0;
     }
 }
 
@@ -462,8 +473,8 @@ section.hobby {
 }
 
 .contact input {
-    padding: 5px;
     height: 36px;
+    padding: 5px;
 }
 
 .contact textarea {
@@ -480,8 +491,8 @@ section.hobby {
 }
 
 .contact .social {
-    padding-bottom: 5px;
     text-align: center;
+    padding-bottom: 5px;
 }
 
 .contact .social p {
@@ -490,10 +501,10 @@ section.hobby {
 }
 
 .contact .socials .fab {
-    width: 50px;
-    height: 50px;
     border: 1px solid white;
     border-radius: 50%;
+    width: 50px;
+    height: 50px;
     line-height: 50px;
     font-size: 24px;
     color: white;
@@ -557,8 +568,8 @@ section.hobby {
 footer {
     max-width: 1600px;
     margin: 0 auto;
-    padding: 15px;
     text-align: right;
     background-color: #434362;
     color: aliceblue;
+    padding: 15px;
 }
