@@ -1,2 +1,3 @@
-# projekt1
-Projekt realizowany na kursie z Udemy z moimi zmianami, z wykorzystaniem media queries.
+# first-web-template
+
+Project implemented on the Udemy curse with my changes.
